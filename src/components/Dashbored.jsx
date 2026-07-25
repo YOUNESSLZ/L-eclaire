@@ -57,10 +57,10 @@ END:VCARD`;
 
         {/* Cover */}
         <div className="cover">
-          <img src="public/unnamed.jpg" alt="Cover" className="cover-image" />
+          <img src="/unnamed.jpg" alt="Cover" className="cover-image" />
 
           <div className="brand-pill">
-            <img src="public/Copilot_20260725_202332.png" alt="Logo" />
+            <img src="/Copilot_20260725_202332.png" alt="Logo" />
             {/* <span>L'Eclair</span> */}
           </div>
         </div>
