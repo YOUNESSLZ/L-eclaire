@@ -639,18 +639,30 @@ body{
 
 }
 
-@media (max-width:430px){
+@media (max-width: 430px) {
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two buttons per row */
+    gap: 12px; /* keep spacing consistent */
+    justify-items: center; /* center buttons horizontally */
+  }
 
-.actions{
-
-    grid-template-columns:1fr;
-
+  .action {
+    width: 100%;
+  }
 }
 
-.action{
 
-    width:100%;
 
-}
+@media (max-width: 230px) {
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two buttons per row */
+    gap: 12px; /* keep spacing consistent */
+    justify-items: center; /* center buttons horizontally */
+  }
 
+  .action {
+    width: 100%;
+  }
 }
