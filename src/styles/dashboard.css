@@ -1,0 +1,656 @@
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+    width:100%;
+    min-height:100vh;
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:
+    radial-gradient(circle at center,
+    #ffffff 0%,
+    #faf7f1 45%,
+    #f3eee5 100%);
+
+}
+
+/* ===========================
+   PAGE
+=========================== */
+
+.page{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    padding:40px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.business-card{
+
+    width:420px;
+
+    background:#fff;
+
+    border-radius:34px;
+
+    overflow:hidden;
+
+    border:1px solid #ead9ad;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.07),
+    0 10px 25px rgba(201,164,75,.12);
+
+}
+
+/* ===========================
+   COVER
+=========================== */
+
+.cover{
+
+    position:relative;
+
+    width:100%;
+
+    height:192px;
+
+    overflow:hidden;
+
+}
+
+.cover-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.brand-pill{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:rgba(150, 98, 7, 0.629);
+
+    backdrop-filter:blur(14px);
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+.brand-pill img{
+
+    width:74px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+.card-body{
+
+    padding:30px;
+    
+
+}
+
+.card-body h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:62px;
+
+    font-weight:800;
+
+    line-height:1;
+
+    color:#171717;
+
+    margin-bottom:10px;
+
+}
+
+.card-body h4{
+
+    color:#af8a2c;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.subtitle{
+
+    color:#777;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   LINE
+=========================== */
+
+.separator{
+
+    width:100%;
+
+    height:1px;
+
+    background:#eee6d6;
+
+    margin:30px 0;
+
+}
+
+/* ===========================
+   BUTTON GRID
+=========================== */
+
+.actions{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+
+}
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.action{
+
+    height:47px;
+
+    border-radius:30px;
+
+    border:1.5px solid #dcb458;
+
+    background:#fff;
+
+    color:#000000;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:.28s ease;
+
+    outline:none;
+
+}
+
+.action svg{
+
+    font-size:20px;
+
+}
+
+.action:hover{
+
+    transform:translateY(-2px);
+
+    background:#fffdf8;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.primary{
+
+    background:linear-gradient(
+        180deg,
+        #af8a2c,
+        #b98a2b
+    );
+
+    color:#fff;
+
+    border:none;
+
+    box-shadow:
+    0 10px 25px rgba(193,150,52,.30);
+
+}
+
+.primary:hover{
+
+    background:linear-gradient(
+        180deg,
+        #ddb654,
+        #bf9032
+    );
+
+}
+
+/* ==========================================
+   SAVE CONTACT
+========================================== */
+
+.save-contact{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:34px;
+
+    margin-top:8px;
+
+    background:linear-gradient(
+        180deg,
+        #af8a2c,
+        #b98a2b
+    );
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 15px 35px rgba(189,146,40,.28);
+
+}
+
+.save-contact:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 22px 40px rgba(189,146,40,.35);
+
+}
+
+.save-contact svg{
+
+    font-size:22px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    margin-top:22px;
+
+    color:#8b8b8b;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.business-card{
+
+    animation:cardAppear .6s ease;
+
+}
+
+@keyframes cardAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================================
+   FINAL POLISH
+========================================== */
+
+.business-card{
+    transition:all .35s ease;
+}
+
+.business-card:hover{
+    transform:translateY(-6px);
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.10),
+        0 12px 40px rgba(196,153,56,.18);
+}
+
+.cover::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    height:120px;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.18),
+        rgba(0,0,0,0)
+    );
+
+}
+
+.card-body{
+
+    background:#fff;
+
+}
+
+.card-body h1{
+
+    letter-spacing:-2px;
+
+}
+
+.card-body h2{
+
+    letter-spacing:.2px;
+
+}
+
+.subtitle{
+
+    max-width:320px;
+
+}
+
+/* ==========================================
+   BUTTON EFFECT
+========================================== */
+
+.action{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.action::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:120%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transition:.7s;
+
+}
+
+.action:hover::before{
+
+    left:120%;
+
+}
+
+.save-contact{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.save-contact::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    width:120%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.save-contact:hover::before{
+
+    left:120%;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:600px){
+
+.page{
+
+    padding:18px;
+
+}
+
+.business-card{
+
+    width:100%;
+
+    max-width:390px;
+
+}
+
+.cover{
+
+    height:210px;
+
+}
+
+.brand-pill{
+
+    transform:scale(.92);
+
+    transform-origin:left top;
+        font-size:254px;
+
+}
+
+.card-body{
+
+    padding:24px;
+
+}
+
+.card-body h1{
+
+    font-size:54px;
+
+}
+
+.card-body h2{
+
+    font-size:24px;
+
+}
+
+.subtitle{
+
+    font-size:16px;
+
+}
+
+.actions{
+
+    gap:12px;
+
+}
+
+.action{
+
+    height:52px;
+
+    font-size:16px;
+
+}
+
+.save-contact{
+
+    height:56px;
+
+    font-size:20px;
+
+}
+
+.footer{
+
+    font-size:13px;
+
+}
+
+}
+
+@media (max-width:430px){
+
+.actions{
+
+    grid-template-columns:1fr;
+
+}
+
+.action{
+
+    width:100%;
+
+}
+
+}
