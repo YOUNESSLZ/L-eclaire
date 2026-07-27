@@ -57,7 +57,7 @@ END:VCARD`;
 
         {/* Cover */}
         <div className="cover">
-          <img src="/unnamed.jpg" alt="Cover" className="cover-image" />
+          <img src="/copilot_image_1785168745129.jpeg" alt="Cover" className="cover-image" />
 
           <div className="brand-pill">
             <img src="/copilot_image_1785168745129.jpeg" alt="Logo" />
