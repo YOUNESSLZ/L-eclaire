@@ -60,7 +60,7 @@ END:VCARD`;
           <img src="/unnamed.jpg" alt="Cover" className="cover-image" />
 
           <div className="brand-pill">
-            <img src="/Copilot_20260725_202332.png" alt="Logo" />
+            <img src="/copilot_image_1785168745129.jpeg" alt="Logo" />
             {/* <span>L'Eclair</span> */}
           </div>
         </div>
